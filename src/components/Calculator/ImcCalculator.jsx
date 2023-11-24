@@ -3,7 +3,7 @@ import Button from '../Button/Button'
 
 import "./ImcCalculator.css"
 
-const ImcCalculator = ({calcImc}) => {
+const ImcCalculator = ({ calcImc }) => {
   const [height, setHeight] = useState("");
   const [weight, setWeight] = useState("");
 
@@ -61,7 +61,7 @@ const ImcCalculator = ({calcImc}) => {
           <Button
             id={"calc-btn"}
             text={"Calcular"}
-            action={calcImc}
+            action={(e) => calcImc(e, height, weight)}
           />
           <Button
             id={"clear-btn"}
