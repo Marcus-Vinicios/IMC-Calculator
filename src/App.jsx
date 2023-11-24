@@ -31,7 +31,7 @@ function App() {
     <div className='container'>
       {!imc
         ? <ImcCalculator calcImc={calcImc} />
-        : <TableIMC />
+        : <TableIMC data={data} />
       }
     </div>
   )
