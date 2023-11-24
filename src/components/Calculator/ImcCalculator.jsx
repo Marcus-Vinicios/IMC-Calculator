@@ -1,10 +1,11 @@
 import React from 'react'
 import "./ImcCalculator.css"
+import Button from '../Button/Button'
 
 const ImcCalculator = () => {
   return (
-    <div>
-      <h2>Calculadore de IMC</h2>
+    <div id='calc-container'>
+      <h2>Calculadora de IMC</h2>
       <form id='imc-form'>
         <div className='form-inputs'>
           <div className='form-control'>
@@ -27,8 +28,8 @@ const ImcCalculator = () => {
           </div>
         </div>
         <div className='action-control'>
-          <button>Calcular</button>
-          <button>Limpar</button>
+          <Button id={"calc-btn"} text={"Calcular"} />
+          <Button id={"clear-btn"} text={"Limpar"} />
         </div>
       </form>
     </div>
