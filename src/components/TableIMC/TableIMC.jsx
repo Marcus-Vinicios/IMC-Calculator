@@ -2,14 +2,14 @@ import Button from '../Button/Button'
 
 import "./TableIMC.css"
 
-function TableIMC({ data }) {
+function TableIMC({ data, imc, info, infoClass, resetCalc }) {
   return (
     <div id='result-container'>
       <p id="imc-number">
-        Seu IMC:
+        Seu IMC: <span className={infoClass}>{imc}</span>
       </p>
       <p id="imc-info">
-        Situação Atual:
+        Situação Atual: <span className={infoClass}>{info}</span>
       </p>
       <h3>Confira as Classificações:</h3>
       <div id="imc-table">
@@ -26,7 +26,7 @@ function TableIMC({ data }) {
           </div>
         ))}
       </div>
-      <Button id={"back-btn"} text={"Voltar"} />
+      <Button id={"back-btn"} text={"Voltar"} action={(e) => resetCalc(e)} />
     </div>
   )
 }

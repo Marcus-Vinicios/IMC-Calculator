@@ -25,13 +25,37 @@ function App() {
     console.log(`IMC: ${imc}`);
 
     setImc(imc);
+
+    data.forEach((item) => {
+      if (imc >= item.min && imc <= item.max) {
+        setInfo(item.info);
+        setInfoClass(item.infoClass);
+      }
+    })
+
+    if (!info) { return }
+  }
+
+  const resetCalc = (e) => {
+    e.preventDefault();
+    setImc("");
+    setInfo("");
+    setInfoClass("");
   }
 
   return (
     <div className='container'>
       {!imc
-        ? <ImcCalculator calcImc={calcImc} />
-        : <TableIMC data={data} />
+        ?
+        <ImcCalculator calcImc={calcImc} />
+        :
+        <TableIMC
+          data={data}
+          imc={imc}
+          info={info}
+          infoClass={infoClass}
+          resetCalc={resetCalc}
+        />
       }
     </div>
   )
