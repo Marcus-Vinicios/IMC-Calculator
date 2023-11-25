@@ -1,8 +1,20 @@
-# React + Vite
+# Calculadora de IMC
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Sumário
+- [Instalação](#instalação)
+- [Utilização](#utilização)
+- [Contato](#contato)
 
-Currently, two official plugins are available:
+## Tecnologias Utilizadas
+O projeto foi desenvolvido utilizando as seguintes tecnologias:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- JavaScript
+- React
+- Vite
+- CSS
+
+## Contato
+Se tiver alguma dúvida ou sugestão relacionada ao projeto, sinta-se à vontade para entrar em contato:
+
+- Email: marcusv.fl.oliveira@gmail.com
+- GitHub: [Marcus-Vinicios](https://github.com/Marcus-Vinicios)
