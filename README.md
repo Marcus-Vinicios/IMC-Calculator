@@ -1,4 +1,5 @@
 # Calculadora de IMC
+Calcule seu IMC: [Calculadora-IMC](https://imc-calculator-lime.vercel.app/)
 
 ## Sumário
 - [Instalação](#instalação)
